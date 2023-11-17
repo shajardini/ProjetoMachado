@@ -22,9 +22,58 @@ body{
 
 header{
     background-image: linear-gradient(to bottom,var(--cor3),var(--cor1) );/*linha de gradiente- (direção, cor que começa, cor que termina)*/
+    padding-top: 30px;/*Espaçamanento dentro da caixa*/
+    text-align: center;
+    min-height: 130px;/*altura mínima*/
 }
 
+header > h1{
+    color: black;
+    margin-bottom: 20px;/*Distância até o próximo elemento*/
+}
 
+header > p{
+    color: black;
+}
+
+nav{
+    background-color: var(--cor1) ;
+    padding: 10px;
+    box-shadow: 1px 1px 3px black;/*x, y, extensão e cor*/
+}
+
+nav > a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;/*Tirando a decoração do texto*/
+    font-weight: 900;/*peso da fonte, 'negrito', 100 a 900, bold, bolder*/
+    transition-duration: 0.5s;
+    border-radius: 3px;
+}
+
+nav > a:hover{/*Pseudo-classe - adicionando um estado especial */
+   background-color: var(--cor3);
+}
+
+main{
+    background-color: #ffffff;
+    min-width: 320px;/*largura mínima*/
+    max-width: 1000px;/*largura máxima*/
+    margin: auto;/*Utilizado nesse contexto para centralizar o main*/
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 3px;
+    text-align: center;
+    box-shadow: 3px 2px 5px 0px;/*sombra de caixa*/
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor4),transparent, var(--cor2), blue, red, green, yellow);/*(direcao, cor 1, cor 2*/
+    padding: 5px 0;/*__(tB) ___(rl)*/
+    color: #fff;
+ 
+}
 
 
 
